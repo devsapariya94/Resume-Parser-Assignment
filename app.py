@@ -7,6 +7,7 @@ from docx import Document  # Importing Document class from python-docx
 import os
 import win32com.client
 
+st.set_page_config(page_title="Resume Parser", layout="wide")
 st.title("Resume Parser")
 st.write("Upload your resume(s) to extract emails and phone numbers")
 files = st.file_uploader("Upload your files", accept_multiple_files=True)
